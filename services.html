@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Sharp Blades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar (Same as index) -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-cut me-2"></i>Sharp Blades</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-custom btn-sm" href="appointment.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero-section"
+        style="height: 50vh; background-image: url('https://images.unsplash.com/photo-1503951914875-452162b7f30a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Our Services</h1>
+            <p class="hero-subtitle">Exceptional grooming for the modern man.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container py-5">
+
+            <div class="text-center mb-5">
+                <div class="btn-group" role="group" aria-label="Pricing Toggle">
+                    <button type="button" class="btn btn-outline-dark active" id="btn-basic">Basic Package</button>
+                    <button type="button" class="btn btn-outline-dark" id="btn-premium">Premium Package</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="services-container">
+                <!-- Service Item 1 -->
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-cut fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>Classic Haircut</h3>
+                        <p class="text-muted">30 - 45 mins</p>
+                        <p>Precision cut, hot towel finish, and styling.</p>
+                        <h4 class="text-primary fw-bold">$35</h4>
+                    </div>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-user-tie fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>Beard Trim</h3>
+                        <p class="text-muted">20 - 30 mins</p>
+                        <p>Shape up, trim, and beard oil application.</p>
+                        <h4 class="text-primary fw-bold">$25</h4>
+                    </div>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-soap fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>Hot Shave</h3>
+                        <p class="text-muted">30 mins</p>
+                        <p>Traditional straight razor shave with hot towels.</p>
+                        <h4 class="text-primary fw-bold">$40</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2025 Sharp Blades. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Simple toggle logic for demo purposes
+        const btnBasic = document.getElementById('btn-basic');
+        const btnPremium = document.getElementById('btn-premium');
+        const servicesContainer = document.getElementById('services-container');
+
+        btnBasic.addEventListener('click', () => {
+            btnBasic.classList.add('active');
+            btnPremium.classList.remove('active');
+            // Reset to basic content (demo)
+            servicesContainer.innerHTML = `
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-cut fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>Classic Haircut</h3>
+                        <p class="text-muted">30 - 45 mins</p>
+                        <p>Precision cut, hot towel finish, and styling.</p>
+                        <h4 class="text-primary fw-bold">$35</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-user-tie fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>Beard Trim</h3>
+                        <p class="text-muted">20 - 30 mins</p>
+                        <p>Shape up, trim, and beard oil application.</p>
+                        <h4 class="text-primary fw-bold">$25</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-soap fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>Hot Shave</h3>
+                        <p class="text-muted">30 mins</p>
+                        <p>Traditional straight razor shave with hot towels.</p>
+                        <h4 class="text-primary fw-bold">$40</h4>
+                    </div>
+                </div>
+            `;
+        });
+
+        btnPremium.addEventListener('click', () => {
+            btnPremium.classList.add('active');
+            btnBasic.classList.remove('active');
+            // Switch to premium content (demo)
+            servicesContainer.innerHTML = `
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-crown fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>The Royal Treatment</h3>
+                        <p class="text-muted">60 - 75 mins</p>
+                        <p>Haircut, beard trim, hot shave, and facial massage.</p>
+                        <h4 class="text-primary fw-bold">$85</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-spray-can fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>Color & Style</h3>
+                        <p class="text-muted">60 mins</p>
+                        <p>Grey blending or full color with precision styling.</p>
+                        <h4 class="text-primary fw-bold">$65</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100 text-center">
+                        <i class="fas fa-spa fa-3x mb-3" style="color: var(--accent-color);"></i>
+                        <h3>Scalp Therapy</h3>
+                        <p class="text-muted">45 mins</p>
+                        <p>Deep cleansing scalp treatment and massage.</p>
+                        <h4 class="text-primary fw-bold">$50</h4>
+                    </div>
+                </div>
+            `;
+        });
+    </script>
+</body>
+
+</html>
