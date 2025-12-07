@@ -35,22 +35,22 @@ const styles = {
     fade: {
         title: "The Modern Fade",
         desc: "A seamless transition from short to long.",
-        img: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        img: "images/style-fade.jpg"
     },
     pompadour: {
         title: "Classic Pompadour",
         desc: "Volume on top, slicked back sides for a timeless look.",
-        img: "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        img: "images/style-pompadour.jpg"
     },
     buzz: {
         title: "Buzz Cut",
         desc: "Low maintenance, rugged, and masculine.",
-        img: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        img: "images/style-buzz.jpg"
     },
     undercut: {
         title: "The Undercut",
         desc: "Short sides with a long top, perfect for styling.",
-        img: "https://images.unsplash.com/photo-1593702295094-aea22597af65?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        img: "images/style-undercut.jpg"
     }
 };
 
